@@ -1,4 +1,5 @@
 class Pessoa:
+    olhos = 2
 
     def __init__(self, *filhos, nome=None, idade=100):
         self.nome = nome
@@ -22,6 +23,11 @@ if __name__ == '__main__':
 
     mevio.sobrenome = 'Kifure'  #criando atributo dinamico
     del mevio.filhos  #remove os atributos dinamicamente
+    mevio.olhos = 1
     print(mevio.__dict__)
     print(ticio.__dict__)
+    print(Pessoa.olhos)
+    print(mevio.olhos)
+    print(ticio.olhos)
+    print(id(Pessoa.olhos), id(mevio.olhos), id(ticio.olhos))
 
