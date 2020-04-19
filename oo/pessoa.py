@@ -20,3 +20,8 @@ if __name__ == '__main__':
     for filho in mevio.filhos:
         print(filho.nome)
 
+    mevio.sobrenome = 'Kifure'  #criando atributo dinamico
+    del mevio.filhos  #remove os atributos dinamicamente
+    print(mevio.__dict__)
+    print(ticio.__dict__)
+
