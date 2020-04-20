@@ -1,6 +1,16 @@
+'''
+    >> Testando motor
+    >> motor = Motor()
+    >> motor.acelerar()
+    >> motor.acelerar()
+    >> motor.velocidade
+    >> motor.acelerar()
+    >> motor.frear()
+    >> motor.frear()
+'''
 class Motor:
-    def __init__(self, velocidade=0):
-        self.velocidade = velocidade
+    def __init__(self):
+        self.velocidade = 0
 
     def acelerar(self):
         self.velocidade += 1

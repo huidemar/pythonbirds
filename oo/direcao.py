@@ -1,3 +1,34 @@
+'''
+Implementando doctests
+    >>> # Testando Direcao
+    >>> direcao = Direcao()
+    >>> direcao.valor
+    'Norte'
+    >>> direcao.girar_a_direita()
+    >>> direcao.valor
+    'Leste'
+    >>> direcao.girar_a_direita()
+    >>> direcao.valor
+    'Sul'
+    >>> direcao.girar_a_direita()
+    >>> direcao.valor
+    'Oeste'
+    >>> direcao.girar_a_direita()
+    >>> direcao.valor
+    'Norte'
+    >>> direcao.girar_a_esquerda()
+    >>> direcao.valor
+    'Oeste'
+    >>> direcao.girar_a_esquerda()
+    >>> direcao.valor
+    'Sul'
+    >>> direcao.girar_a_esquerda()
+    >>> direcao.valor
+    'Leste'
+    >>> direcao.girar_a_esquerda()
+    >>> direcao.valor
+    'Norte'
+'''
 class Direcao:
     def __init__(self, valor='Norte'):
         self.rota = ['Norte', 'Leste', 'Sul', 'Oeste']

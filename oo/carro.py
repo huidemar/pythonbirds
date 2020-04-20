@@ -15,15 +15,15 @@ A Direção terá a responsabilidade de controlar a direção. Ela oferece os se
 1 - Valor de diração com valores possíveis: Norte, Sul, Leste, Oeste.
 2 - Método girar_a_direita
 3 - Método girar_a_esquerda
-
-    >>> # Testando motor
+    >>> #Testando motor
     >>> motor = Motor()
     >>> motor.acelerar()
     >>> motor.acelerar()
+    >>> motor.velocidade
     >>> motor.acelerar()
     >>> motor.frear()
     >>> motor.frear()
-    >>> # Testando Direcao
+    >>> #Testando Direcao
     >>> direcao = Direcao()
     >>> direcao.valor
     'Norte'
@@ -51,6 +51,7 @@ A Direção terá a responsabilidade de controlar a direção. Ela oferece os se
     >>> direcao.girar_a_esquerda()
     >>> direcao.valor
     'Norte'
+    >>> #Testando carro
     >>> carro = Carro(direcao=direcao, motor=motor)
     >>> carro.calcular_velocidade()
     0
@@ -101,11 +102,3 @@ class Carro:
 
     def calcular_direcao(self):
         return self.direcao.calcular_direcao()
-
-
-mot = Motor()
-dir = Direcao()
-
-car = Carro(motor=mot, direcao=dir)
-car.girar_a_direita()
-car.calcular_direcao()
