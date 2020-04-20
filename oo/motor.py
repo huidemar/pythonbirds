@@ -1,12 +1,13 @@
 '''
-    >> Testando motor
-    >> motor = Motor()
-    >> motor.acelerar()
-    >> motor.acelerar()
-    >> motor.velocidade
-    >> motor.acelerar()
-    >> motor.frear()
-    >> motor.frear()
+    >>> #Testando motor
+    >>> motor = Motor()
+    >>> motor.acelerar()
+    >>> motor.acelerar()
+    >>> motor.velocidade
+    2
+    >>> motor.acelerar()
+    >>> motor.frear()
+    >>> motor.frear()
 '''
 class Motor:
     def __init__(self):

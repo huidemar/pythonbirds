@@ -20,6 +20,7 @@ A Direção terá a responsabilidade de controlar a direção. Ela oferece os se
     >>> motor.acelerar()
     >>> motor.acelerar()
     >>> motor.velocidade
+    2
     >>> motor.acelerar()
     >>> motor.frear()
     >>> motor.frear()
@@ -86,7 +87,7 @@ class Carro:
         self.direcao = direcao
 
     def calcular_velocidade(self):
-        self.motor.calcular_velocidade()
+        return self.motor.velocidade
 
     def acelerar(self):
         self.motor.acelerar()
