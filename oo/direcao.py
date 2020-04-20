@@ -1,5 +1,9 @@
 '''
-Implementando doctests
+A Direção terá a responsabilidade de controlar a direção. Ela oferece os seguintes atributos:
+
+1 - Valor de diração com valores possíveis: Norte, Sul, Leste, Oeste.
+2 - Método girar_a_direita
+3 - Método girar_a_esquerda
     >>> # Testando Direcao
     >>> direcao = Direcao()
     >>> direcao.valor

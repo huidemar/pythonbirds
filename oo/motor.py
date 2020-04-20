@@ -1,4 +1,8 @@
 '''
+1 - Motor
+2 - Direção
+O Motor terá a responsabilidade de controlar a velocidade.
+Ele oferece os seguintes atributos:
     >>> #Testando motor
     >>> motor = Motor()
     >>> motor.acelerar()
