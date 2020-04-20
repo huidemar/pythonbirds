@@ -1,11 +1,4 @@
 class Direcao:
-'''
-A Direção terá a responsabilidade de controlar a direção. Ela oferece os seguintes atributos:
-
-1 - Valor de diração com valores possíveis: Norte, Sul, Leste, Oeste.
-2 - Método girar_a_direita
-3 - Método girar_a_esquerda
-'''
     def __init__(self, valor='Norte'):
         self.rota = ['Norte', 'Leste', 'Sul', 'Oeste']
         self.valor = valor
@@ -26,4 +19,4 @@ A Direção terá a responsabilidade de controlar a direção. Ela oferece os se
         self.valor = self.rota[self.direcao]
 
     def calcular_direcao(self):
-        print(self.valor)
+        return self.valor
