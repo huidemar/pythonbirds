@@ -69,7 +69,7 @@ class AtorTestes(TestCase):
     def teste_nao_colisao_entre_atores_distantes(self):
         'Teste de que não há colisão entre atores distantes'
         self.assert_nao_colisao(Ator(2, 2), Ator(2, 4))
-        self.assert_nao_colisao(Ator(2, 2), Ator(3, 4))
+        self.assert_nao_colisao(Ator(2, 2), Ator(3, 5))
         self.assert_nao_colisao(Ator(2, 2), Ator(4, 2))
         self.assert_nao_colisao(Ator(2, 2), Ator(3, 0))
         self.assert_nao_colisao(Ator(2, 2), Ator(2, 0))
