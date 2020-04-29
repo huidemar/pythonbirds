@@ -53,8 +53,8 @@ class Ator():
         :return:
         """
         if self.status == ATIVO and outro_ator.status == ATIVO:
-            delta_x = (self.x - outro_ator.x)
-            delta_y = (self.y - outro_ator.y)
+            delta_x = abs(self.x - outro_ator.x)
+            delta_y = abs(self.y - outro_ator.y)
             if delta_x <= intervalo and delta_y <= intervalo:
                 self.status = outro_ator.status = DESTRUIDO
 
