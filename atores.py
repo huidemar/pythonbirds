@@ -67,7 +67,6 @@ class Porco(Ator):
 class DuploLancamentoExcecao(Exception):
     pass
 
-
 class Passaro(Ator):
     velocidade_escalar = 10
 
